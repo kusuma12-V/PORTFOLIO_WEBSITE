@@ -203,3 +203,26 @@ form button{
     margin-bottom:20px;
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.skills div{
+    padding:12px 20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,.1);
+    font-weight:bold;
+}
+
+.btn{
+    margin:10px;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+}
