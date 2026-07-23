@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Admin Dashboard</div>
+
+<ul>
+<li><a href="/">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="projects-section">
+
+<h1>Contact Messages</h1>
+
+<table border="1" width="100%" cellpadding="10">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Message</th>
+</tr>
+
+{% for row in messages %}
+
+<tr>
+
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+<td>{{ row[3] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</section>
+
+</body>
+</html>
